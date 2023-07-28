@@ -10,8 +10,8 @@ const TodoListItem = (props) => {
             <div className={styles.checkbox}>
                 {/* 삼항 연산자로 체크여부를 따져서 체크된 아이콘이 보일지 아니면 체크안된 아이콘이 보일지 결정 */}
                 {props.todo.checked ? <MdCheckBox /> : <MdCheckBoxOutlineBlank />}
-                <MdCheckBoxOutlineBlank />
-                <div className={styles.checkbox}>{props.todo.text}</div>
+                {/* <MdCheckBoxOutlineBlank /> */}
+                <div className={styles.text}>{props.todo.text}</div>
             </div>
             <div className={styles.remove}>
                 <MdRemoveCircleOutline />

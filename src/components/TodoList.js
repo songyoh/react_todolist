@@ -5,7 +5,7 @@ import styles from "./TodoList.module.css"
 // props로 전달된 todos를 이용해 map형식으로 출력
 const TodoList = (props) => {
     const TodoListItems = props.todos.map(todo =>{
-        return <TodoListItem todo={todos} key={todo.id}/>
+        return <TodoListItem todo={todo} key={todo.id}/>
     });
 
     return(
@@ -13,8 +13,8 @@ const TodoList = (props) => {
             {/* <TodoListItem/>
             <TodoListItem/>
             <TodoListItem/> */}
-            <TodoListItem todo={todos} key={todo.id} />
-            {/* {TodoListItems} */}
+            {/* <TodoListItem todo={todos} key={todo.id} /> */}
+            {TodoListItems}
         </div>
     );
 };
